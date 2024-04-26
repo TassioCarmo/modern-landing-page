@@ -1,0 +1,96 @@
+/* imports Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+/* Includes Tailwind CSS base styles, components, and utilities. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sets root-level CSS variables for font families and color scheme. */
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  color-scheme: dark;
+}
+
+/* Applies smooth scrolling behavior to all elements. */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Defines custom rotation utility classes for rotating elements at various angles. */
+@layer base {
+  body {
+    /* Applies Tailwind CSS utility classes for font, background, and text color. */
+    @apply font-sans bg-n-8 text-n-1 text-base;
+  }
+}
+
+/* Custom rotation utility classes for rotating elements in 45-degree increments. */
+.rotate-45 {
+  @apply rotate-[45deg];
+}
+
+.rotate-90 {
+  @apply rotate-[90deg];
+}
+
+.rotate-135 {
+  @apply rotate-[135deg];
+}
+
+.rotate-180 {
+  @apply rotate-[180deg];
+}
+
+.rotate-225 {
+  @apply rotate-[225deg];
+}
+
+.rotate-270 {
+  @apply rotate-[270deg];
+}
+
+.rotate-315 {
+  @apply rotate-[315deg];
+}
+
+.rotate-360 {
+  @apply rotate-[360deg];
+}
+
+/* Custom rotation utility classes for rotating elements in negative 45-degree increments. */
+.-rotate-45 {
+  @apply rotate-[-45deg];
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg];
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg];
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg];
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg];
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg];
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg];
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg];
+}
