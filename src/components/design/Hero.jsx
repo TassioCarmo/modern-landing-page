@@ -3,6 +3,7 @@ import { MouseParallax } from "react-just-parallax";
 
 import PlusSvg from "../../assets/svg/PlusSvg";
 
+// renders two styled <div> elements to create gradient backgrounds with shadow effects.
 export const Gradient = () => {
   return (
     <>
@@ -12,6 +13,7 @@ export const Gradient = () => {
   );
 };
 
+//renders a horizontal line and two PlusSvg components positioned at the left and right sides respectively.
 export const BottomLine = () => {
   return (
     <>
@@ -24,6 +26,10 @@ export const BottomLine = () => {
   );
 };
 
+/* renders four circular rings, each with different sizes and border styles. 
+  They are positioned absolutely at the center of their parent container 
+  and have specific dimensions and styles applied to create the desired appearance. */
+
 const Rings = () => {
   return (
     <>
@@ -35,6 +41,12 @@ const Rings = () => {
   );
 };
 
+/*  renders a set of circles, including the Rings component, 
+    and adds dynamic movement to some of them using the MouseParallax component. 
+    The useEffect hook ensures that the component updates when mounted. 
+    The circles' appearance and behavior are controlled by conditional classes that depend on the mounted state, 
+    allowing for smooth transitions and animations. 
+*/
 export const BackgroundCircles = ({ parallaxRef }) => {
   const [mounted, setMounted] = useState(false);
 

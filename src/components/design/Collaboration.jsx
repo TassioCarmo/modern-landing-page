@@ -1,5 +1,7 @@
-import { curve1, curve2 } from "../../assets";
+import { curve1, curve2 } from "../../assets"; //import the curve images
 
+/* renders a hidden div containing an image of a curve (curve2) positioned 
+at the left edge of its parent container. It is shown only on extra-large screens (xl:block).*/
 export const RightCurve = () => {
   return (
     <div className="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10 pointer-events-none xl:block">
